@@ -98,7 +98,9 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
 **The word `title` will be used to name the three files that will be generated**
 **Also, please not that the number of objects will be the number of copies**
 
-* Now I open the command line in my folder that contains the app, the rst template and Json file and I run this command : 
+
+
+* 5/ Finally, I open the command line in my folder that contains the app, the rst template and Json file and I run this command : 
 
 if on windows : 
 `./rstgen-win`
