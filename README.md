@@ -28,7 +28,7 @@ in order for this app to work, you need to follow these steps :
 
 Create your template As you want but put all the fields that you want to be dynamic inside `{{ }}`
 
-**Important : Do not use the word `title` in your template as it is a reserved word.
+**Important : Do not use the word `title` in your template as it is a reserved word.**
 
 
 
