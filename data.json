@@ -1,9 +1,11 @@
-[  {    "name": "John Doe",  
-       "age": 28,   
+[
+
+  {"name": "John Doe",  
+    "age": 28,   
     "photo": "https://picsum.photos/id/1019/200/200",  
    "profession": "Web Developer",  
    "skills": ["HTML", "CSS", "JavaScript"],
-    "title": "Senior Developer"
+    "title": "The resume of John Doe"
   },
   {
     "name": "Jane Smith",
@@ -11,7 +13,7 @@
     "photo": "https://picsum.photos/id/1025/200/200",
     "profession": "Data Analyst",
     "skills": ["Python", "SQL", "Excel"],
-    "title": "Data Science Manager"
+    "title": "The resume of Jane Smith"
   },
   {
     "name": "David Lee",
@@ -19,6 +21,7 @@
     "photo": "https://picsum.photos/id/1035/200/200",
     "profession": "Sales Manager",
     "skills": ["Marketing", "Negotiation", "Leadership"],
-    "title": "Director of Sales"
+    "title": "The resume of David Lee"
   }
+
 ]
