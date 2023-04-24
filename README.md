@@ -71,7 +71,7 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
     "photo": "https://picsum.photos/id/1019/200/200",  
    "profession": "Web Developer",  
    "skills": ["HTML", "CSS", "JavaScript"],
-    "title": "Senior Developer"
+    "title": "The resume of John Doe"
   },
   {
     "name": "Jane Smith",
@@ -79,7 +79,7 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
     "photo": "https://picsum.photos/id/1025/200/200",
     "profession": "Data Analyst",
     "skills": ["Python", "SQL", "Excel"],
-    "title": "Data Science Manager"
+    "title": "The resume of Jane Smith"
   },
   {
     "name": "David Lee",
@@ -87,7 +87,7 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
     "photo": "https://picsum.photos/id/1035/200/200",
     "profession": "Sales Manager",
     "skills": ["Marketing", "Negotiation", "Leadership"],
-    "title": "Director of Sales"
+    "title": "The resume of David Lee"
   }
 ]
 
@@ -110,4 +110,4 @@ if on macOs :
 if on Linux : 
 `./rstgen-linux`
 
-* A new folder has been created in my inital folder and it is named `generated_templates`. It contains three files named : `Senior Developer`, `Data Science Manager`, `Director of Sales` as it is specified in `data.json`.
+* A new folder has been created in my inital folder and it is named `generated_templates`. It contains three files named : `The resume of John Doe`, `The resume of Jane Smith`, `The resume of David Lee` as it is specified in `data.json`.
