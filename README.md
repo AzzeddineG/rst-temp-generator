@@ -4,8 +4,7 @@ This is a node js app that creates multiple populated RST files from an RST temp
 
 It is  portable for windows, Linux and MacOs.
 
-If you have trust issues you can use the `rstgen.js` file and package it yourself using [pkg](https://www.npmjs.com/package/pkg)  :) 
-
+If you have trust issues you can use the `rstgen.js` file and package it yourself using [pkg](https://www.npmjs.com/package/pkg)  :smile:  
 
 
 
@@ -19,7 +18,7 @@ in order for this app to work, you need to follow these steps :
 * In this folder create/put you JSON file that **MUST** be named   `data.json` (Mandatory)
 * In this folder, open the command line and run `./rstgen` (or whatever you decided to name the packaged app) 
 * In this folder , a new repository `generated_templates` will be created, it contains the generated RST files
-* Enjoy :) 
+* Enjoy :relaxed: 
 
 
 # How to create Your `template.rst` and `data.json`
@@ -43,7 +42,7 @@ Create your template As you want but put all the fields that you want to be dyna
 Let's say that I want to create a resume for 3 people using the same `.rst` template.
 
 * 1/ First, I create an empty folder/repository
-* 2 / I download and copy past the app that corresponds to my OS in this folder.
+* 2/ I download and copy past the app that corresponds to my OS in this folder.
 * 3/ In the same folder I create a file that I will name `template.rst` and I put the following content in it : 
 
 ```

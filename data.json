@@ -1,45 +1,24 @@
-[
-    {
-      "title": "Template 1",
-      "firstname": "John",
-      "age": 25,
-      "country": "USA"
-    },
-    {
-      "title": "Template 2",
-      "firstname": "Emily",
-      "age": 35,
-      "country": "Canada"
-    },
-    {
-      "title": "Template 3",
-      "firstname": "David",
-      "age": 41,
-      "country": "UK"
-    },
-    {
-      "title": "Template 4",
-      "firstname": "Amy",
-      "age": 29,
-      "country": "Australia"
-    },
-    {
-      "title": "Template 5",
-      "firstname": "Miguel",
-      "age": 22,
-      "country": "Mexico"
-    },
-    {
-      "title": "Template 6",
-      "firstname": "Julia",
-      "age": 27,
-      "country": "Brazil"
-    },
-    {
-      "title": "Template 7",
-      "firstname": "Daniel",
-      "age": 32,
-      "country": "Spain"
-    }
-  ]
-  
+[  {    "name": "John Doe",  
+       "age": 28,   
+    "photo": "https://picsum.photos/id/1019/200/200",  
+   "profession": "Web Developer",  
+   "skills": ["HTML", "CSS", "JavaScript"],
+    "title": "Senior Developer"
+  },
+  {
+    "name": "Jane Smith",
+    "age": 35,
+    "photo": "https://picsum.photos/id/1025/200/200",
+    "profession": "Data Analyst",
+    "skills": ["Python", "SQL", "Excel"],
+    "title": "Data Science Manager"
+  },
+  {
+    "name": "David Lee",
+    "age": 42,
+    "photo": "https://picsum.photos/id/1035/200/200",
+    "profession": "Sales Manager",
+    "skills": ["Marketing", "Negotiation", "Leadership"],
+    "title": "Director of Sales"
+  }
+]
