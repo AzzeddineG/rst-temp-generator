@@ -5,7 +5,7 @@
     "photo": "https://picsum.photos/id/1019/200/200",  
    "profession": "Web Developer",  
    "skills": ["HTML", "CSS", "JavaScript"],
-    "title": "The resume of John Doe"
+    "docTitle": "The resume of John Doe"
   },
   {
     "name": "Jane Smith",
@@ -13,7 +13,7 @@
     "photo": "https://picsum.photos/id/1025/200/200",
     "profession": "Data Analyst",
     "skills": ["Python", "SQL", "Excel"],
-    "title": "The resume of Jane Smith"
+    "docTitle": "The resume of Jane Smith"
   },
   {
     "name": "David Lee",
@@ -21,7 +21,7 @@
     "photo": "https://picsum.photos/id/1035/200/200",
     "profession": "Sales Manager",
     "skills": ["Marketing", "Negotiation", "Leadership"],
-    "title": "The resume of David Lee"
+    "docTitle": "The resume of David Lee"
   }
 
 ]

@@ -17,7 +17,7 @@ in order for this app to work, you need to follow these steps :
 * In this folder create/put your RST template that **MUST** be named `template.rst` (Mandatory)
 * In this folder create/put you JSON file that **MUST** be named   `data.json` (Mandatory)
 * In this folder, open the command line and run `./rstgen` (or whatever you decided to name the packaged app) 
-* In this folder , a new repository `generated_templates` will be created, it contains the generated RST files
+* In this folder , a new repository `generated_files` will be created, it contains the generated RST files
 * Enjoy :relaxed: 
 
 
@@ -25,19 +25,28 @@ in order for this app to work, you need to follow these steps :
 
 ## `template.rst`
 
+### Create many files from the file `data.json`
+
 Create your template As you want but put all the fields that you want to be dynamic inside `{{ }}`
 
-**Important : Do not use the word `title` in your template as it is a reserved word.**
+**Important : Do not use the word `docTitle` in your template as it is a reserved word.**
 
+
+### Duplicate the data in `data.json` in the same RST file
+If you don't want to create many copies of your data, and you want it duplicated inside one file just put all the content of your `template.rst` inside `[]` 
 
 
 ## `data.json`
 
-* Your JSON file **MUST** be an array of objects. Each object will be used to create and populate a new `.rst` file as a copy of the template in the `generated_templates` folder.
+* Your JSON file **MUST** be an array of objects. Each object will be used to create and populate a new `.rst` file.
 
-* the word `title` must be in every object as it will be used to name the populated copy of the template.
+* The number of objects in the array reprensent the number of duplications of the content of the `template.rst` file (inside one file or in sperate files as mentioned in the section above)
 
-## Exemple
+* If you want to create put the copies of the content of `template.rst`in many files, then `docTitle` must be in every object as it will be used to name the populated copy of the template.
+
+
+
+## Exemple 1 
 
 Let's say that I want to create a resume for 3 people using the same `.rst` template.
 
@@ -71,7 +80,7 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
     "photo": "https://picsum.photos/id/1019/200/200",  
    "profession": "Web Developer",  
    "skills": ["HTML", "CSS", "JavaScript"],
-    "title": "The resume of John Doe"
+    "docTitle": "The resume of John Doe"
   },
   {
     "name": "Jane Smith",
@@ -79,7 +88,7 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
     "photo": "https://picsum.photos/id/1025/200/200",
     "profession": "Data Analyst",
     "skills": ["Python", "SQL", "Excel"],
-    "title": "The resume of Jane Smith"
+    "docTitle": "The resume of Jane Smith"
   },
   {
     "name": "David Lee",
@@ -87,16 +96,11 @@ In this case I want `photo`, `name`, `age` and `skills` to be pouplated by `data
     "photo": "https://picsum.photos/id/1035/200/200",
     "profession": "Sales Manager",
     "skills": ["Marketing", "Negotiation", "Leadership"],
-    "title": "The resume of David Lee"
+    "docTitle": "The resume of David Lee"
   }
 ]
 
 ```
-**PLease not that the word `title` MUST be inside evey object but it MUST NOT be used inside the file `template.rst`**
-
-**The word `title` will be used to name the three files that will be generated**
-**Also, please not that the number of objects will be the number of copies**
-
 
 
 * 5/ Finally, I open the command line in my folder that contains the app, the rst template and Json file and I run this command : 
@@ -110,4 +114,33 @@ if on macOs :
 if on Linux : 
 `./rstgen-linux`
 
-* A new folder has been created in my inital folder and it is named `generated_templates`. It contains three files named : `The resume of John Doe`, `The resume of Jane Smith`, `The resume of David Lee` as it is specified in `data.json`.
+* A new folder has been created in my inital folder and it is named `generated_files`. It contains three files named : `The resume of John Doe`, `The resume of Jane Smith`, `The resume of David Lee` as it is specified in `data.json`.
+
+
+## Exemple 2
+
+If I want the previous resumes to be inside one RST file, I will follow the same steps as teh previous example, but i will organize my `template.rst` file like the following : 
+
+
+```
+[
+.. image:: {{photo}}
+    :width: 200
+    :align: right
+
+**Name**: {{name}}
+
+**Age**: {{age}}
+
+**Profession**: {{profession}}
+
+**Skills**: {{skills}}
+
+]
+```
+
+=> Note that the only change is that I have put all the content of the `template.rst` file  inside `[ ]`
+=> Note that the format of `data.json` file will not change and in this case adding the word `doctType` to each object is not necessary.
+
+* Now when you execute the app, it will create only one file named `generated_file.rst`
+
